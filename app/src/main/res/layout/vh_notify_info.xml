@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/notify_status"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:scaleType="centerInside"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/notify_title"
+        style="@style/MainInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/notify_status"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="12345555" />
+
+
+    <TextView
+        android:id="@+id/notify_time"
+        style="@style/MainInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/notify_title"
+        android:layout_toEndOf="@id/notify_status"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="yyyymmdd" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/notify_status"
+        android:background="#ffeee566"/>
+
+    <TextView
+        android:id="@+id/notify_content"
+        style="@style/MainInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notify_time"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="notify" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="#eeffee"/>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_mask">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/pop_box_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_pop">
+
+
+        <Button
+            android:id="@+id/permission_btn_close"
+            style="@style/PopButtonNega"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/pop_permission_button_close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/permission_btn_grant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/permission_container" />
+
+        <Button
+            android:id="@+id/permission_btn_grant"
+            style="@style/PopButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="@string/pop_permission_button_grant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/permission_btn_close"
+            app:layout_constraintTop_toBottomOf="@id/permission_container" />
+
+        <TextView
+            android:id="@+id/permission_container"
+            style="@style/PopMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:maxLines="5"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="@id/permission_title"
+            app:layout_constraintStart_toStartOf="@id/permission_title"
+            app:layout_constraintTop_toBottomOf="@id/permission_message" />
+
+        <TextView
+            android:id="@+id/permission_title"
+            style="@style/PopTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/pop_box_edge_margin"
+            android:layout_marginTop="@dimen/pop_box_edge_margin"
+            android:layout_marginEnd="@dimen/pop_box_edge_margin"
+            android:text="@string/pop_permission_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/permission_message"
+            style="@style/PopMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/pop_permission_message"
+            app:layout_constraintEnd_toEndOf="@id/permission_title"
+            app:layout_constraintStart_toStartOf="@id/permission_title"
+            app:layout_constraintTop_toBottomOf="@id/permission_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

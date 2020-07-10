@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/channelUserItemLayout">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/DarkText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dip"
+        android:text=""
+        android:id="@+id/_user_name">
+    </TextView>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/DarkText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dip"
+        android:id="@+id/_user_info">
+    </TextView>
+
+</RelativeLayout>

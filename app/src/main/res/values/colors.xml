@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#419CF1</color>
+    <color name="colorAccentDark">#1D5CBD</color>
+
+    <color name="textColorPrimary">#FFFFFFFF</color>
+    <color name="textColorSecondary">#E2E1DE</color>
+
+    <color name="black_overlay">#667f7f7f</color>
+
+    <color name="bg">#ff11122F</color>
+    <color name="bg_pop">#60616D</color>
+
+    <color name="ripple_mask">#7FE7E3E3</color>
+    <color name="dark_mask">#7F222222</color>
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/systeminfo_linelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/ls_systeminfo_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#403f50"
+            android:text="@string/device_info"
+            android:textColor ="#f0fff0"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ls_fcs_deviceid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:clickable="true">
+        </TextView>
+
+        <TextView
+            android:id="@+id/ls_fcs_hardversion_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:clickable="true">
+        </TextView>
+
+        <TextView
+            android:id="@+id/ls_fcs_softversion_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:clickable="true">
+        </TextView>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/ls_fcs_talk_setup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#403f50"
+            android:text="@string/talk_channel_setting"
+            android:textColor ="#f0fff0"
+            android:textSize="24sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:id="@+id/_talk_channel_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/systeminfo_linelayout">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="26dip"
+            android:layout_marginLeft="4dip"
+            android:text="@string/talk_channel_current_channel"
+            android:id="@+id/_talk_channel_label">
+        </TextView>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="26dip"
+            android:layout_marginLeft="4dip"
+            android:gravity="center"
+            android:id="@+id/_talk_channel_name">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/system_bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <Button
+            android:id="@+id/ls_fcs_btn_system_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg"
+            android:textColor="@color/textColorPrimary"
+            android:layout_margin="10dp"
+            android:text="@string/android_setting"/>
+        <Button
+            android:id="@+id/ls_fcs_btn_factorySetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg"
+            android:textColor="@color/textColorPrimary"
+            android:layout_margin="10dp"
+            android:text="@string/Factory_setting"/>
+        <Button
+            android:id="@+id/ls_fcs_but_back"
+            android:text="@string/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg"
+            android:textColor="@color/textColorPrimary"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+    <ListView android:id="@+id/talk_channel_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/system_bottom_bar"
+        android:layout_marginLeft="40dip"
+        android:layout_marginBottom="4dip"
+        />
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20dip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/talk_channel_list_view"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/talk_channel_channel_list"
+        android:id="@+id/_talk_channellist_label">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/_talk_channellist_label"
+        android:background="@color/bg_pop"/>
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/talk_user_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/_talk_channel_bar"
+        app:layout_constraintBottom_toTopOf="@id/_talk_channellist_label"
+        android:layout_marginLeft="14dip"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/channelListItemLayout">
+
+    <ImageView
+        android:id="@+id/_channel_state"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="4dip"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_toEndOf="@id/_channel_state"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="4dip"
+        style="@style/DarkText"
+        android:text=""
+        android:id="@+id/_channel_name">
+    </TextView>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/DarkText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:id="@+id/_channel_info">
+    </TextView>
+
+</RelativeLayout>

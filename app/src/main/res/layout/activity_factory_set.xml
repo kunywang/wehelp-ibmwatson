@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/factorySetLayout"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#403f50">
+            <Button
+
+                android:layout_marginLeft="7dp"
+                android:id="@+id/image_retreat"
+                android:layout_gravity="center"
+                android:text="back"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="base info"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+            <Button
+                android:layout_marginRight="7dp"
+                android:text="test"
+                android:id="@+id/fac_imbtn_Set_up"
+                android:layout_gravity="center"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/fs_network_result"
+                android:text="Unconnected"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/fs_network_asu"
+                android:text="Unconnected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/fs_network_nettype"
+                android:text="Unconnected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <Button
+                android:id="@+id/fs_network_test"
+                android:text="network"
+                android:layout_gravity="right"
+                android:layout_width="70dp"
+                android:layout_height="50dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/fs_server_label"
+                android:gravity="center"
+                android:text="IP:"
+                android:layout_gravity="left"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                />
+            <EditText
+                android:id="@+id/fs_server_edit"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/fs_port_edit"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/fs_server_modify"
+                android:text="update"
+                android:layout_gravity="right"
+                android:layout_width="70dp"
+                android:layout_height="50dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/fs_hid_label"
+                android:gravity="center"
+                android:text="board_number"
+                android:layout_gravity="left"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                />
+
+            <EditText
+                android:id="@+id/fs_hid_edit"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/fs_hid_modify"
+                android:text="update"
+                android:layout_gravity="right"
+                android:layout_width="70dp"
+                android:layout_height="50dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/fs_cdid_label"
+                android:gravity="center"
+                android:text="@string/title_deviceID"
+                android:layout_gravity="left"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                />
+            <EditText
+
+                android:id="@+id/fs_cdid_edit"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/fs_cdid_modify"
+                android:text="update"
+                android:layout_gravity="right"
+                android:layout_width="70dp"
+                android:layout_height="50dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/fs_cur_cdid_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textColor ="#f01110"
+                android:text="11111111"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/fs_cur_hid_label"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textColor ="#f01110"
+                android:text="2222"
+                android:textSize="28sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/fs_cleardata"
+        android:text="clear all"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
